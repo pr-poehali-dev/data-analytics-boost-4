@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -85,7 +85,7 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply bg-[#0a0a0a] text-foreground font-sans antialiased;
   }
 }
 
@@ -141,4 +141,25 @@
     linear-gradient(to right, hsl(var(--border)) 1px, transparent 1px),
     linear-gradient(to bottom, hsl(var(--border)) 1px, transparent 1px);
   background-size: 40px 40px;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.bg-white\/8 {
+  background-color: rgb(255 255 255 / 0.08);
+}
+.bg-white\/3 {
+  background-color: rgb(255 255 255 / 0.03);
+}
+.bg-white\/12 {
+  background-color: rgb(255 255 255 / 0.12);
+}
+.border-white\/8 {
+  border-color: rgb(255 255 255 / 0.08);
 }
